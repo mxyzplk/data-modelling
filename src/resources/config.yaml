@@ -1,0 +1,3 @@
+data_backend: panda
+data_files:
+   - ["diabetes.arff", "arff"]
