@@ -1,4 +1,4 @@
-def DataFactory(backend: str, data):
+def DataFactory(backend: str, read_mode: str, filename: str):
     """
     Cria um wrapper de dados baseado no backend escolhido.
 
@@ -13,9 +13,9 @@ def DataFactory(backend: str, data):
     """
     if backend.lower() == "pandas":
         from .pandas_impl import PandasData
-        return PandasData(data)
+        return PandasData(filename, read_mode)
     elif backend.lower() == "pyspark":
         from .pyspark_impl import PySparkData
-        return PySparkData(data)
+        return PySparkData(filename, read_mode)
     else:
         raise ValueError(f"Backend '{backend}' não suportado. Use 'pandas' ou 'pyspark'.")
