@@ -1,19 +1,54 @@
 data_backend: panda
 run:
-    - name: diabete_analysis_1
+    - name: students_analysis
       data_files:
-        - ["diabetes.arff", "arff"]
+        - ["students.csv", "csv", "student_1"]
       analyses:
-         oneR: 
+         correlation:
             enabled: true
+            attributes:
+               - ["school", "nominal", "G3", "continuous"]
+               - ["sex", "nominal", "G3", "continuous"]
+               - ["age", "nominal", "G3", "continuous"]
+               - ["address", "nominal", "G3", "continuous"]
+               - ["famsize", "nominal", "G3", "continuous"]
+               - ["Pstatus", "nominal", "G3", "continuous"]
+               - ["Medu", "ordinal", "G3", "continuous"]
+               - ["Fedu", "ordinal", "G3", "continuous"]
+               - ["Mjob", "nominal", "G3", "continuous"]
+               - ["Fjob", "nominal", "G3", "continuous"]
+               - ["reason", "nominal", "G3", "continuous"]
+               - ["guardian", "nominal", "G3", "continuous"]
+               - ["traveltime", "ordinal", "G3", "continuous"]
+               - ["studytime", "ordinal", "G3", "continuous"]
+               - ["failures", "ordinal", "G3", "continuous"]
+               - ["schoolsup", "nominal", "G3", "continuous"]
+               - ["famsup", "nominal", "G3", "continuous"]
+               - ["paid", "nominal", "G3", "continuous"]
+               - ["activities", "nominal", "G3", "continuous"]
+               - ["nursery", "nominal", "G3", "continuous"]
+               - ["higher", "nominal", "G3", "continuous"]
+               - ["internet", "nominal", "G3", "continuous"]
+               - ["romantic", "nominal", "G3", "continuous"]
+               - ["famrel", "ordinal", "G3", "continuous"]
+               - ["freetime", "ordinal", "G3", "continuous"]
+               - ["goout", "ordinal", "G3", "continuous"]
+               - ["Dalc", "ordinal", "G3", "continuous"]
+               - ["Walc", "ordinal", "G3", "continuous"]
+               - ["health", "ordinal", "G3", "continuous"]
+               - ["absences", "continuous", "G3", "continuous"]
+               - ["G1", "continuous", "G3", "continuous"]
+               - ["G2", "continuous", "G3", "continuous"]
+         oneR: 
+            enabled: false
             options:
                class_col: "class"
          zeroR: 
-            enabled: true
+            enabled: false
             options:
                class_col: "class"
          c45: 
-            enabled: true
+            enabled: false
             options:
                class_col: "class"
                max_depth: 5

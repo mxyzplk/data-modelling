@@ -4,8 +4,6 @@ import yaml
 class Config:
     def __init__(self):
         self.config = None
-        self.modifications = None
-
         self.read_config()
 
 
