@@ -9,9 +9,10 @@ class Config:
 
     def read_config(self):
 
-        main_dir = os.path.dirname(os.path.abspath(__file__))
-        resources_dir = os.path.join(main_dir, '../resources')
-        filepath = os.path.join(resources_dir,  'config.yaml')
+        backend_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.join(backend_dir, '..', '..') 
+        resources_dir = os.path.join(project_root, 'resources')
+        filepath = os.path.join(resources_dir,  'config.yaml')        
 
         with open(filepath, "r") as f:
             

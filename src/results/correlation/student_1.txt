@@ -1,0 +1,32 @@
+Attribute: school, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.2843
+Attribute: sex, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.1291
+Attribute: age, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.1967
+Attribute: address, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.1676
+Attribute: famsize, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0450
+Attribute: Pstatus, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0008
+Attribute: Medu, Target: G3, Method: Spearman, Correlation: 0.2839, P-value: 1.6882e-13
+Attribute: Fedu, Target: G3, Method: Spearman, Correlation: 0.2346, P-value: 1.4437e-09
+Attribute: Mjob, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.2092
+Attribute: Fjob, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.1411
+Attribute: reason, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.2133
+Attribute: guardian, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0900
+Attribute: traveltime, Target: G3, Method: Spearman, Correlation: -0.1469, P-value: 1.7213e-04
+Attribute: studytime, Target: G3, Method: Spearman, Correlation: 0.2747, P-value: 1.0606e-12
+Attribute: failures, Target: G3, Method: Spearman, Correlation: -0.4484, P-value: 2.0475e-33
+Attribute: schoolsup, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0664
+Attribute: famsup, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0592
+Attribute: paid, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0549
+Attribute: activities, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0598
+Attribute: nursery, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0288
+Attribute: higher, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.3322
+Attribute: internet, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.1500
+Attribute: romantic, Target: G3, Method: Eta (nominal x continuous), Correlation: 0.0906
+Attribute: famrel, Target: G3, Method: Spearman, Correlation: 0.0478, P-value: 2.2439e-01
+Attribute: freetime, Target: G3, Method: Spearman, Correlation: -0.1284, P-value: 1.0467e-03
+Attribute: goout, Target: G3, Method: Spearman, Correlation: -0.1050, P-value: 7.4434e-03
+Attribute: Dalc, Target: G3, Method: Spearman, Correlation: -0.2084, P-value: 8.4319e-08
+Attribute: Walc, Target: G3, Method: Spearman, Correlation: -0.1709, P-value: 1.2006e-05
+Attribute: health, Target: G3, Method: Spearman, Correlation: -0.1057, P-value: 7.0516e-03
+Attribute: absences, Target: G3, Method: Pearson, Correlation: -0.0914, P-value: 1.9896e-02
+Attribute: G1, Target: G3, Method: Pearson, Correlation: 0.8264, P-value: 1.6176e-163
+Attribute: G2, Target: G3, Method: Pearson, Correlation: 0.9185, P-value: 5.6424e-263

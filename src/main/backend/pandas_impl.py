@@ -6,18 +6,21 @@ from sklearn.metrics import accuracy_score
 
 
 class PandasData(Data):
-    def __init__(self, filename=None, read_mode=None):
+    def __init__(self, filename=None, read_mode=None, sep=None):
         super().__init__(filename, read_mode)
+        self.read_data_wrapper(filename, read_mode, sep)
 
-
-    def read_data_wrapper(self, filename, read_mode):
+    def read_data_wrapper(self, filename, read_mode, sep=None):
         raw_data = super().read_data_wrapper(filename, read_mode)
         
         if read_mode == "arff":
             columns = [attr[0] for attr in raw_data["attributes"]]
             self.df = pd.DataFrame(raw_data["data"], columns=columns)
         elif read_mode == "csv":
-            self.df = pd.read_csv(raw_data)
+            if sep == None:
+                self.df = pd.read_csv(raw_data)
+            else:
+                self.df = pd.read_csv(raw_data, sep=sep)
 
     def summary(self):
         return self.df.describe()
