@@ -1,0 +1,2 @@
+Attribute: school, Attribute: reason, Method: Cramers V, Result: 0.2844829916304641
+ 
