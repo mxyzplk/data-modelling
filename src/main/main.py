@@ -41,7 +41,7 @@ def main():
                     
                     output_path = os.path.join(results_dir, "correlation")
                     os.makedirs(output_path, exist_ok=True)
-                    fileout = label + ".txt"
+                    fileout = label + "_correlation.txt"
                     filepath = os.path.join(output_path, fileout)
 
                     attributes = analysis_cfg.get("attributes", [])
@@ -64,6 +64,12 @@ def main():
                                     f"Method: {result['method']}, "
                                     f"Correlation: {result['value']:.4f}\n"
                                 )
+
+                if analysis_name == "cramers_v":
+                    output_path = os.path.join(results_dir, "cramers_v")
+                    os.makedirs(output_path, exist_ok=True)
+                    fileout = label + "_crammers_v.txt"
+                    filepath = os.path.join(output_path, fileout)                    
 
 
 if __name__ == "__main__":

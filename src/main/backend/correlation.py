@@ -53,12 +53,12 @@ def get_correlation(df: pd.DataFrame, atributo: str, classe: str, tipo_atributo:
     return resultado
 
 
-# Exemplo de uso:
-# df = pd.DataFrame({
-#     "satisfacao": [1, 2, 3, 4, 5],
-#     "renda": [2000, 2200, 2500, 3000, 3200]
-#})
+def cramers_v(x, y):
+    """Calcula Cramer's V entre duas variáveis categóricas"""
+    contingency_table = pd.crosstab(x, y)
+    chi2, _, _, _ = chi2_contingency(contingency_table)
+    n = contingency_table.sum().sum()
+    k = min(contingency_table.shape)
+    return np.sqrt(chi2 / (n * (k - 1)))
 
-#resultado = spearman_corr(df, "satisfacao", "renda")
-#print(f"Spearman rho = {resultado['rho']}, p-valor = {resultado['p-valor']}")
 

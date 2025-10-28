@@ -40,6 +40,10 @@ run:
                - ["G1", "continuous", "G3", "continuous"]
                - ["G2", "continuous", "G3", "continuous"]
                - ["G1", "continuous", "G2", "continuous"]
+         cramers_v:
+            enabled: true
+            attributes:
+               - ["school", "reason"]
          oneR: 
             enabled: false
             options:
