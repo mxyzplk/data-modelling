@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from scipy.stats import spearmanr, pearsonr, shapiro, chi2_contingency
+from scipy.stats import spearmanr, pearsonr, shapiro, chi2_contingency, pointbiserialr
 
 
 def eta_squared(x, y):
@@ -46,6 +46,11 @@ def get_correlation(df: pd.DataFrame, atributo: str, classe: str, tipo_atributo:
         resultado["method"] = "Pearson"
         resultado["value"] = corr
         resultado["p-value"] = pval
+    elif method == "PointBiserial":
+        r_pb, pval = pointbiserialr(x, y)
+        resultado["method"] = "Point Biserial"
+        resultado["value"] = r_pb
+        resultado["p-value"] = pval      
     else:
         resultado["method"] = None
         resultado["value"] = None

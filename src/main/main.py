@@ -53,7 +53,7 @@ def main():
                             print(f"correlation:   - {attr_name:10s} ({attr_type}) → {target_name} ({target_type})")    
                             result = get_correlation(dataframes[label], attr_name, target_name, attr_type, target_type, method)
 
-                            if result["method"] in ("Spearman", "Pearson"):
+                            if result["method"] in ("Spearman", "Pearson", "Point Biserial"):
                                 f.write(
                                     f"Attribute: {attr_name}, Target: {target_name}, "
                                     f"Method: {result['method']}, "
