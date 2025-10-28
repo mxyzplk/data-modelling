@@ -39,6 +39,7 @@ run:
                - ["absences", "continuous", "G3", "continuous"]
                - ["G1", "continuous", "G3", "continuous"]
                - ["G2", "continuous", "G3", "continuous"]
+               - ["G1", "continuous", "G2", "continuous"]
          oneR: 
             enabled: false
             options:

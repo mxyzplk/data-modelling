@@ -30,3 +30,4 @@ Attribute: health, Target: G3, Method: Spearman, Correlation: -0.1057, P-value: 
 Attribute: absences, Target: G3, Method: Pearson, Correlation: -0.0914, P-value: 1.9896e-02
 Attribute: G1, Target: G3, Method: Pearson, Correlation: 0.8264, P-value: 1.6176e-163
 Attribute: G2, Target: G3, Method: Pearson, Correlation: 0.9185, P-value: 5.6424e-263
+Attribute: G1, Target: G2, Method: Pearson, Correlation: 0.8650, P-value: 6.3738e-196
