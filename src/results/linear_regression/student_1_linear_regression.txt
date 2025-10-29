@@ -1,14 +1,17 @@
 === RELATÓRIO DE REGRESSÃO LINEAR ===
 
-Variável alvo: 0.8478
+Variável alvo: 0.2446
 
 Coeficientes:
 
-  - G1                  :   0.148896
-  - G2                  :   0.897140
+  - studytime           :   0.082265
+  - Dalc                :  -0.075202
+  - higher              :   0.268541
+  - failures            :  -0.201859
+  - Medu                :   0.074921
 
-Intercepto: -0.171283
+Intercepto: 0.106758
 
-Erro quadrático médio (MSE): 1.586486
+Erro quadrático médio (MSE): 0.187870
 
-Coeficiente de determinação (R²): 0.8478
+Coeficiente de determinação (R²): 0.2446

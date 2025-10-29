@@ -1,1 +1,1 @@
-Attribute: G3, Method: Shapiro-Wilk, Correlation: 0.9260, P-value: 2.4160e-17, Significance: 0.05, Interpretação: Não normal (rejeita H0),
+Attribute: G12, Method: Shapiro-Wilk, Correlation: 0.6347, P-value: 6.3224e-35, Significance: 0.05, Interpretação: Não normal (rejeita H0),

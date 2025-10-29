@@ -1,44 +1,44 @@
-Attribute: school, Target: G3, Method: Eta, Correlation: 0.2843
-Attribute: sex, Target: G3, Method: Eta, Correlation: 0.1291
-Attribute: sex, Target: G3, Method: Point Biserial, Correlation: -0.1291, P-value: 9.8153e-04
-Attribute: age, Target: G3, Method: Eta, Correlation: 0.1967
-Attribute: address, Target: G3, Method: Eta, Correlation: 0.1676
-Attribute: famsize, Target: G3, Method: Eta, Correlation: 0.0450
-Attribute: Pstatus, Target: G3, Method: Eta, Correlation: 0.0008
-Attribute: Medu, Target: G3, Method: Spearman, Correlation: 0.2839, P-value: 1.6882e-13
-Attribute: Fedu, Target: G3, Method: Spearman, Correlation: 0.2346, P-value: 1.4437e-09
-Attribute: Mjob, Target: G3, Method: Eta, Correlation: 0.2092
-Attribute: Fjob, Target: G3, Method: Eta, Correlation: 0.1411
-Attribute: reason, Target: G3, Method: Eta, Correlation: 0.2133
-Attribute: guardian, Target: G3, Method: Eta, Correlation: 0.0900
-Attribute: traveltime, Target: G3, Method: Spearman, Correlation: -0.1469, P-value: 1.7213e-04
-Attribute: studytime, Target: G3, Method: Spearman, Correlation: 0.2747, P-value: 1.0606e-12
-Attribute: failures, Target: G3, Method: Spearman, Correlation: -0.4484, P-value: 2.0475e-33
-Attribute: schoolsup, Target: G3, Method: Eta, Correlation: 0.0664
-Attribute: famsup, Target: G3, Method: Eta, Correlation: 0.0592
-Attribute: paid, Target: G3, Method: Eta, Correlation: 0.0549
-Attribute: activities, Target: G3, Method: Eta, Correlation: 0.0598
-Attribute: nursery, Target: G3, Method: Eta, Correlation: 0.0288
-Attribute: higher, Target: G3, Method: Eta, Correlation: 0.3322
-Attribute: internet, Target: G3, Method: Eta, Correlation: 0.1500
-Attribute: romantic, Target: G3, Method: Eta, Correlation: 0.0906
-Attribute: schoolsup, Target: G3, Method: Point Biserial, Correlation: -0.0664, P-value: 9.0971e-02
-Attribute: famsup, Target: G3, Method: Point Biserial, Correlation: 0.0592, P-value: 1.3189e-01
-Attribute: paid, Target: G3, Method: Point Biserial, Correlation: -0.0549, P-value: 1.6244e-01
-Attribute: activities, Target: G3, Method: Point Biserial, Correlation: 0.0598, P-value: 1.2810e-01
-Attribute: nursery, Target: G3, Method: Point Biserial, Correlation: 0.0288, P-value: 4.6465e-01
-Attribute: higher, Target: G3, Method: Point Biserial, Correlation: 0.3322, P-value: 3.4997e-18
-Attribute: internet, Target: G3, Method: Point Biserial, Correlation: 0.1500, P-value: 1.2489e-04
-Attribute: romantic, Target: G3, Method: Point Biserial, Correlation: -0.0906, P-value: 2.1002e-02
-Attribute: famrel, Target: G3, Method: Spearman, Correlation: 0.0478, P-value: 2.2439e-01
-Attribute: freetime, Target: G3, Method: Spearman, Correlation: -0.1284, P-value: 1.0467e-03
-Attribute: goout, Target: G3, Method: Spearman, Correlation: -0.1050, P-value: 7.4434e-03
-Attribute: Dalc, Target: G3, Method: Spearman, Correlation: -0.2084, P-value: 8.4319e-08
-Attribute: Walc, Target: G3, Method: Spearman, Correlation: -0.1709, P-value: 1.2006e-05
-Attribute: health, Target: G3, Method: Spearman, Correlation: -0.1057, P-value: 7.0516e-03
-Attribute: absences, Target: G3, Method: Spearman, Correlation: -0.1585, P-value: 4.9919e-05
-Attribute: G1, Target: G3, Method: Spearman, Correlation: 0.8833, P-value: 4.9874e-215
-Attribute: G2, Target: G3, Method: Spearman, Correlation: 0.9445, P-value: 7.0664e-315
+Attribute: school, Target: G12, Method: Eta, Correlation: 0.2671
+Attribute: sex, Target: G12, Method: Eta, Correlation: 0.1359
+Attribute: sex, Target: G12, Method: Point Biserial, Correlation: -0.1359, P-value: 5.1738e-04
+Attribute: age, Target: G12, Method: Eta, Correlation: 0.1813
+Attribute: address, Target: G12, Method: Eta, Correlation: 0.1723
+Attribute: famsize, Target: G12, Method: Eta, Correlation: 0.0003
+Attribute: Pstatus, Target: G12, Method: Eta, Correlation: 0.0010
+Attribute: Medu, Target: G12, Method: Spearman, Correlation: 0.2616, P-value: 1.2959e-11
+Attribute: Fedu, Target: G12, Method: Spearman, Correlation: 0.2314, P-value: 2.4323e-09
+Attribute: Mjob, Target: G12, Method: Eta, Correlation: 0.2493
+Attribute: Fjob, Target: G12, Method: Eta, Correlation: 0.1487
+Attribute: reason, Target: G12, Method: Eta, Correlation: 0.1921
+Attribute: guardian, Target: G12, Method: Eta, Correlation: 0.1033
+Attribute: traveltime, Target: G12, Method: Spearman, Correlation: -0.1808, P-value: 3.5704e-06
+Attribute: studytime, Target: G12, Method: Spearman, Correlation: 0.2548, P-value: 4.4292e-11
+Attribute: failures, Target: G12, Method: Spearman, Correlation: -0.3983, P-value: 4.2233e-26
+Attribute: schoolsup, Target: G12, Method: Eta, Correlation: 0.0551
+Attribute: famsup, Target: G12, Method: Eta, Correlation: 0.0228
+Attribute: paid, Target: G12, Method: Eta, Correlation: 0.0119
+Attribute: activities, Target: G12, Method: Eta, Correlation: 0.1242
+Attribute: nursery, Target: G12, Method: Eta, Correlation: 0.0671
+Attribute: higher, Target: G12, Method: Eta, Correlation: 0.3207
+Attribute: internet, Target: G12, Method: Eta, Correlation: 0.1533
+Attribute: romantic, Target: G12, Method: Eta, Correlation: 0.0458
+Attribute: schoolsup, Target: G12, Method: Point Biserial, Correlation: -0.0551, P-value: 1.6085e-01
+Attribute: famsup, Target: G12, Method: Point Biserial, Correlation: 0.0228, P-value: 5.6261e-01
+Attribute: paid, Target: G12, Method: Point Biserial, Correlation: -0.0119, P-value: 7.6300e-01
+Attribute: activities, Target: G12, Method: Point Biserial, Correlation: 0.1242, P-value: 1.5198e-03
+Attribute: nursery, Target: G12, Method: Point Biserial, Correlation: 0.0671, P-value: 8.7865e-02
+Attribute: higher, Target: G12, Method: Point Biserial, Correlation: 0.3207, P-value: 5.3937e-17
+Attribute: internet, Target: G12, Method: Point Biserial, Correlation: 0.1533, P-value: 8.7905e-05
+Attribute: romantic, Target: G12, Method: Point Biserial, Correlation: -0.0458, P-value: 2.4367e-01
+Attribute: famrel, Target: G12, Method: Spearman, Correlation: 0.0545, P-value: 1.6585e-01
+Attribute: freetime, Target: G12, Method: Spearman, Correlation: -0.1220, P-value: 1.8445e-03
+Attribute: goout, Target: G12, Method: Spearman, Correlation: -0.1105, P-value: 4.8407e-03
+Attribute: Dalc, Target: G12, Method: Spearman, Correlation: -0.2086, P-value: 8.1622e-08
+Attribute: Walc, Target: G12, Method: Spearman, Correlation: -0.1569, P-value: 5.9390e-05
+Attribute: health, Target: G12, Method: Spearman, Correlation: -0.0925, P-value: 1.8396e-02
+Attribute: absences, Target: G12, Method: Spearman, Correlation: -0.1729, P-value: 9.4053e-06
+Attribute: G1, Target: G12, Method: Spearman, Correlation: 0.7701, P-value: 1.8728e-128
+Attribute: G2, Target: G12, Method: Spearman, Correlation: 0.8346, P-value: 1.0014e-169
 Attribute: G1, Target: G2, Method: Spearman, Correlation: 0.8931, P-value: 1.3451e-226
 Attribute: freetime, Target: health, Method: Spearman, Correlation: 0.0951, P-value: 1.5364e-02
 Attribute: famrel, Target: health, Method: Spearman, Correlation: 0.0925, P-value: 1.8370e-02
@@ -46,4 +46,4 @@ Attribute: goout, Target: health, Method: Spearman, Correlation: -0.0121, P-valu
 Attribute: Dalc, Target: health, Method: Spearman, Correlation: 0.0849, P-value: 3.0480e-02
 Attribute: Walc, Target: health, Method: Spearman, Correlation: 0.1143, P-value: 3.5531e-03
 Attribute: romantic, Target: health, Method: Point Biserial, Correlation: -0.0180, P-value: 6.4670e-01
-Attribute: extra_support, Target: G3, Method: Spearman, Correlation: -0.0347, P-value: 3.7732e-01
+Attribute: extra_support, Target: G12, Method: Spearman, Correlation: -0.0128, P-value: 7.4476e-01
