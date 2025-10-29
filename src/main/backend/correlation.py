@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 from scipy.stats import spearmanr, pearsonr, shapiro, chi2_contingency, pointbiserialr
-
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
 
 def eta_squared(x, y):
     """
@@ -89,3 +90,25 @@ def shapiro_wilk(serie, attribute_name, significance):
     return resultado
 
 
+def linear_regression(df: pd.DataFrame, features, target):
+    # Selecionar features e target
+    X = df[features]
+    y = df[target]
+    
+    # Criar e treinar o modelo
+    model = LinearRegression()
+    model.fit(X, y)
+    
+    # Fazer previsões
+    y_pred = model.predict(X)
+    
+    # Preparar resultados
+    resultados = {
+        'coeficientes': dict(zip(features, model.coef_)),
+        'intercepto': model.intercept_,
+        'mse': mean_squared_error(y, y_pred),
+        'r2': r2_score(y, y_pred),
+        'previsoes': y_pred
+    }
+    
+    return model, resultados

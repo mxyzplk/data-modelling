@@ -1,4 +1,1 @@
-Attribute: absences, Method: Shapiro-Wilk, Correlation: 0.7717, P-value: 4.5224e-29, Significance: 0.05, Interpretação: Não normal (rejeita H0),
-Attribute: G1, Method: Shapiro-Wilk, Correlation: 0.9855, P-value: 4.9335e-06, Significance: 0.05, Interpretação: Não normal (rejeita H0),
-Attribute: G2, Method: Shapiro-Wilk, Correlation: 0.9617, P-value: 5.5833e-12, Significance: 0.05, Interpretação: Não normal (rejeita H0),
-Attribute: G3, Method: Shapiro-Wilk, Correlation: 0.9260, P-value: 2.4160e-17, Significance: 0.05, Interpretação: Não normal (rejeita H0),
+Attribute: G3, Method: Shapiro-Wilk, Correlation: 0.9260, P-value: 2.4160e-17, Significance: 0.05, InterpretaÃ§Ã£o: NÃ£o normal (rejeita H0),

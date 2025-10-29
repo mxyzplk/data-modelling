@@ -1,0 +1,14 @@
+=== RELATÓRIO DE REGRESSÃO LINEAR ===
+
+Variável alvo: 0.8478
+
+Coeficientes:
+
+  - G1                  :   0.148896
+  - G2                  :   0.897140
+
+Intercepto: -0.171283
+
+Erro quadrático médio (MSE): 1.586486
+
+Coeficiente de determinação (R²): 0.8478

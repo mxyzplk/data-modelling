@@ -1,6 +1,6 @@
 from backend.config import Config
 from backend.factory import DataFactory
-from backend.correlation import get_correlation, shapiro_wilk, cramers_v
+from backend.correlation import get_correlation, shapiro_wilk, cramers_v, linear_regression
 import os
 
 def main():
@@ -109,14 +109,43 @@ def main():
                             print(f"shapiro_wilk:   - {attr_name:10s} ({p_value})")    
                             result = shapiro_wilk(dataframes[label], attr_name, p_value)
 
-                            f.write(
-                                f"Attribute: {attr_name}, "
-                                f"Method: Shapiro-Wilk, "
-                                f"Correlation: {result['Estatística W']:.4f}, "
-                                f"P-value: {result['p-value']:.4e}, "
-                                f"Significance: {result['significance']}, "
-                                f"Interpretação: {result['Interpretação']},\n"
-                            )                                        
+                        f.write(
+                            f"Attribute: {attr_name}, "
+                            f"Method: Shapiro-Wilk, "
+                            f"Correlation: {result['Estatística W']:.4f}, "
+                            f"P-value: {result['p-value']:.4e}, "
+                            f"Significance: {result['significance']}, "
+                            f"Interpretação: {result['Interpretação']},\n"
+                        )                                        
+
+                if analysis_name == "linear_regression":
+                    output_path = os.path.join(results_dir, "linear_regression")
+                    os.makedirs(output_path, exist_ok=True)
+                    fileout = label + "_linear_regression.txt"
+                    filepath = os.path.join(output_path, fileout)   
+                    
+                    attributes = analysis_cfg.get("attributes", [])
+                    target = analysis_cfg.get("target")  
+
+                    with open(filepath, "w") as f:
+                        print(f"linear_regression:   - target: {target:10s}")    
+                        model,result = linear_regression(dataframes[label], attributes, target)
+
+                        relatorio = []
+                        relatorio.append("=== RELATÓRIO DE REGRESSÃO LINEAR ===\n")
+                        relatorio.append(f"Variável alvo: {result['r2']:.4f}\n")
+                        relatorio.append("Coeficientes:\n")  
+                        for nome, valor in result['coeficientes'].items():
+                            relatorio.append(f"  - {nome:<20}: {valor:>10.6f}")                                     
+
+                        relatorio.append(f"\nIntercepto: {result['intercepto']:.6f}")
+                        relatorio.append(f"\nErro quadrático médio (MSE): {result['mse']:.6f}")
+                        relatorio.append(f"\nCoeficiente de determinação (R²): {result['r2']:.4f}\n")
+                        texto_final = "\n".join(relatorio)
+                        print(texto_final)
+
+                        f.write(texto_final)
+
 
 if __name__ == "__main__":
     main()

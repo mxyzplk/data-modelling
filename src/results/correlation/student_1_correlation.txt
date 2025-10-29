@@ -40,3 +40,10 @@ Attribute: absences, Target: G3, Method: Spearman, Correlation: -0.1585, P-value
 Attribute: G1, Target: G3, Method: Spearman, Correlation: 0.8833, P-value: 4.9874e-215
 Attribute: G2, Target: G3, Method: Spearman, Correlation: 0.9445, P-value: 7.0664e-315
 Attribute: G1, Target: G2, Method: Spearman, Correlation: 0.8931, P-value: 1.3451e-226
+Attribute: freetime, Target: health, Method: Spearman, Correlation: 0.0951, P-value: 1.5364e-02
+Attribute: famrel, Target: health, Method: Spearman, Correlation: 0.0925, P-value: 1.8370e-02
+Attribute: goout, Target: health, Method: Spearman, Correlation: -0.0121, P-value: 7.5791e-01
+Attribute: Dalc, Target: health, Method: Spearman, Correlation: 0.0849, P-value: 3.0480e-02
+Attribute: Walc, Target: health, Method: Spearman, Correlation: 0.1143, P-value: 3.5531e-03
+Attribute: romantic, Target: health, Method: Point Biserial, Correlation: -0.0180, P-value: 6.4670e-01
+Attribute: extra_support, Target: G3, Method: Spearman, Correlation: -0.0347, P-value: 3.7732e-01

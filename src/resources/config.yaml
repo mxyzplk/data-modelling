@@ -2,7 +2,7 @@ data_backend: pandas
 run:
     - name: students_analysis
       data_files:
-        - ["student.csv", "csv", "student_1", ";"]
+        - ["student.csv", "csv", "student_1", ","]
       analyses:
          correlation:
             enabled: true
@@ -49,6 +49,13 @@ run:
                - ["G1", "continuous", "G3", "continuous", "Spearman"]
                - ["G2", "continuous", "G3", "continuous", "Spearman"]
                - ["G1", "continuous", "G2", "continuous", "Spearman"]
+               - ["freetime", "ordinal", "health", "ordinal", "Spearman"]
+               - ["famrel", "ordinal", "health", "ordinal", "Spearman"]
+               - ["goout", "ordinal", "health", "ordinal", "Spearman"]
+               - ["Dalc", "ordinal", "health", "ordinal", "Spearman"]
+               - ["Walc", "ordinal", "health", "ordinal", "Spearman"]
+               - ["romantic", "nominal", "health", "ordinal", "PointBiserial"]  
+               - ["extra_support", "ordinal", "G3", "continuous", "Spearman"]                                                          
          shapiro_wilk:
             enabled: true
             attributes:
@@ -60,6 +67,10 @@ run:
             enabled: true
             attributes:
                - ["school", "reason"]
+         linear_regression:
+            enabled: true
+            attributes: ["G1", "G2"]
+            target: "G3"
          oneR: 
             enabled: false
             options:
