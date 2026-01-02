@@ -2,7 +2,7 @@ data_backend: pandas
 run:
     - name: students_analysis
       data_files:
-        - ["student.csv", "csv", "student_1", ","]
+        - ["students_processed.csv", "csv", "students", ","]
       analyses:
          correlation:
             enabled: true
